@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Passero+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,81 +17,122 @@
     --black: #000;
 }
 
-header{
-    overflow: hidden;
+html {
+    scroll-behavior: smooth;
 }
-
-header::before{
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1 ;
-    background: url("../css/images/Background.png"), lightgray 50% / cover no-repeat;
-    background-size: cover ;
-    animation: zoom 8s forwards;
-    /* display: block; */
-
-}
-
 
 body{
     position: relative;
 }
 
-
-h1{
-    background: linear-gradient(180deg, #CE5A06 0%, #7C3E10 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: var(--font-title);
-    font-size: 4.7rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0 5.4rem;
-    text-align: center;
+.principal{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 0 0 0 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
-span#subtitle{
+.principal::before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1 ;
+    background: url("../images/Background.png"), lightgray 50% / cover no-repeat;
+    background-size: cover ;
+    animation: zoom 8s forwards;
+
+}
+
+.principal__conteudo {
+    display: flex;
+    margin-top: 33px;
+    padding: 0 130px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 99px;
+    background: rgba(37, 11, 11, 0.47);
+
+}
+
+.principal__conteudo__titulo{
+    background: linear-gradient(180deg, #CE5A06 0%, #7C3E10 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-title);
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.principal__conteudo__subtitulo{
     text-align: center;
     background: linear-gradient(180deg, #F1AB6A 0%, #8B633D 123.08%);
     background-clip: text;
-    font-feature-settings: 'clig' off, 'liga' off;
     font-family: var(--font-sub);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2.5rem;
     font-weight: 600;
-    letter-spacing: 0.82px;
-    display: block;
-    margin: 0rem 5.4rem;
 }
 
-a{
+.principal__botao{
     display: flex;
-    width: 154px;
-    color: black;
-    gap: 10px;
-    margin: 2rem 5.4rem;
-    justify-content: center;
-    font-family: var(--font-button);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background: linear-gradient(180deg, #FF7A00 0%, #553518 100%);
+    align-self: center;
+
+    width: 175px;
     padding: .25rem 1rem;
+    gap: 10px;
+
+    background: linear-gradient(180deg, #FF7A00 0%, #553518 100%);
+    color: black;
     border-radius: 0.3rem;
+
     transition: opacity .7s;
-    
+
+    font-family: var(--font-button);
+    font-size: 25px;
+    font-weight: 400;
     
 }
 
-a:hover{
+.principal__botao:hover{
     opacity: .8;
 }
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+
+    background: linear-gradient(0deg, #71370D 0%, #4A2E14 101.56%);
+}
+
+.apresentacao__titulo {
+    color: white;
+    
+    font-family: "Kadwa";
+    font-size: 48px ;
+    font-weight: 700;
+
+}
+
+img#tabaco {
+    width: 20%;
+    height: 20%;
+    border-radius: 35px;
+}
+
+
 
 @keyframes zoom{
     from{
