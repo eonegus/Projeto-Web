@@ -1,39 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smoke Station</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <title>Document</title>
 </head>
-
 <body>
-    <header class="principal">
-        <section class="principal__conteudo">
-            <h1 class="principal__conteudo__titulo">Stillus</h1>
-            <span class="principal__conteudo__subtitulo">A maior tabacaria e headshop <br>do Brasil</span>
-            
-        </section>
+    
+    <header>
+        <div class="title">
+            <a href="#tela-principal"><h1>Quatro&Vinte</h1></a>
+        </div>
 
-        <a class="principal__botao" href="#apresentacao">
-            <span class="material-symbols-outlined">
-                smoking_rooms
-            </span>
-                Saiba mais
-        </a>
+        <div class="nav">
+            <a href="">Quem somos</a>
+            <a href="#marcas">Marcas</a>
+            <a href="">Catálogo</a>
+            <a href="">Trabalhe conosco</a>
+        </div>
     </header>
 
-    <section class="apresentacao" id="apresentacao">
-        <img id="tabaco" src="./assets/images/amsterdam.JPG" alt="Foto tabaco">
-        <h1 class="apresentacao__titulo">Tabaco Amsterdam</h1>
-        <p class="apresentacao__conteudo">Tabaco desenvolvido pela marca Amsterdam Tabaco, sendo orgânico 100% natural.
-        Seu destacando por ser totalmente livre de aditivos e conservantes, com isso sendo bem leve, recomendado por muitos.
-        Pensando no meio ambiente, a sua embalagem é totalmente reciclável e biodegradável.
-        Ajudando a manter o frescor e aroma de seu tabaco por mais tempo.</p>
+    <main>
+        <section class="tela-principal" id="#tela-principal">
+            <div class="imagem-principal">
+                <img src="./assets/images/Background.png" alt="Foto da Stillus tabacaria">
+            </div>
+            <div class="conteudo-principal">
+                <h2>A Quatro&Vinte é mais do que uma tabacaria!</h2>
+                <p>Somos apaixonados pelo universo do fumo e oferecemos uma experiência completa para nossos clientes. <br>Além disso, a Stillus também é fornecedora de produtos para tabacarias. Atendemos varejistas de todo o Brasil com rapidez, eficiência e preços competitivos.</p>
+                <div class="buttons">
+                    <a href="#marcas">Marcas</a>
+                    <a href="#produtos">Produtos</a>
+                </div>
+            </div>
+        </section>
+        <section class="marcas" id="marcas">
+            <div class="marcas-conteudo">
+                <h2>Marcas</h2>
+                <p>Na Quatro&Vinte, você encontra apenas as melhores marcas do mercado, para garantir a sua satisfação e oferecer a melhor experiência possível. Trabalhamos com uma seleção rigorosa de produtos, buscando sempre a qualidade superior e a variedade para atender às suas necessidades.</p>
+                <div class="marcas-logo">
+                </div>
+            </div>
+        </section>
+        <section class="quem-somos" id="quem-somos">
+            <div class="qs-conteudo">
+                <h2>Quem somos</h2>
+                <h2>A Tabacaria da Favela que Conquistou o Brasil</h2>
+                <p>Tudo começou com um grupo de amigos que se reunia para compartilhar sua paixão pelo tabaco natural. Entre conversas e risadas, surgiu o desejo de criar um espaço que fosse mais do que apenas um lugar para comprar cigarros. Queríamos um lugar que representasse a nossa comunidade e celebrasse a cultura do fumo de forma autêntica e original.</p>
+                <h3>Nossa missão:</h3>
+                <p>A Stillus tem como missão oferecer produtos de alta qualidade a preços acessíveis, além de promover a cultura do fumo de forma responsável e consciente. Acreditamos que o fumo pode ser um momento de prazer e confraternização, e queremos que nossos clientes tenham a melhor experiência possível.
+                </p>
 
-    </section>
+            </div>
+            
+        </section>
+        <section class="trabalhe_conosco">
+            <div class="formularios">
+              <h1>Trabalhe conosco:</h1>
+        
+              <form action="">
+                <div class="campo linha">
+                  <label for="nome">Nome completo:</label>
+                  <input type="text" id="nome" />
+                </div>
+
+                <div class="campo linha">
+                    <label for="nome">Empresa / Nome da Loja:</label>
+                    <input type="text" id="nome" />
+                </div>
+
+                <div class="campo">
+                  <label for="tel">Número de tel:</label>
+                  <input type="tel" id="tel" />
+                </div>
+        
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" />
+                </div>
+        
+                <div class="campo linha">
+                    <label for="loja">Possui loja física?</label>
+                    <div>
+                        <input name="loja" type="radio" name="" id="loja_sim" />
+                        <label for="loja_sim">Sim, possuo</label>
+                    </div>
+                    <div>
+                        <input name="loja" type="radio" name="" id="loja_nao" />
+                        <label for="loja_nao">Não, apenas E-Commerce</label>
+                    </div>
+                </div>
+
+                <div class="campo linha">
+                    <label for="nome">Endereço da loja / galpão:</label>
+                    <input type="text" id="nome" />
+                </div>
+        
+                <div class="campo linha">
+                  <label for="prazo">Porte da loja:</label>
+                  <input type="range" name="prazo" id="prazo" min="1" max="3" />
+                </div>
+              </form>
+            </div>
+          </section>
+        
+    </main>
+
 </body>
-
 </html>
